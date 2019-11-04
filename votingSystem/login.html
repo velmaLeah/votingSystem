@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LoginForm</title>
+			<meta charset = "utf - 8" />
+				<link rel="stylesheet" type="text/css" href="{% static 'votingSystem/login.css' %}">
+				<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato|Playfair+Display&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<form method="POST">
+            <div class="log">
+			    <div class="avatar">
+				   <!-- <img src="man2-avatar.png" alt="avatar" style="float:left; width:50px; height:100px; ">-->
+			    </div>
+
+			<div class="login" style="font-family: 'Playfair Display', serif; font-size:22px; text-shadow:2px 2px 4px #DDD;">
+              <h1 style="text-shadow:4px 4px 8px black;color:#DDD; font-family:'Lato', sans-serif; font-size:38px;">LOGIN FORM</h1><hr style="border: 1px dashed white;"/>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="regButton" type="submit">LOGIN</button>
+			    <a href="{% url 'index' %}" class="button">CANCEL</a></center></br>
+            </div>
+            </div>
+		</form>
+	</body>
+</html>
+<!--login reverse is not working check corey's work SOLUTION: remove the namespace -->

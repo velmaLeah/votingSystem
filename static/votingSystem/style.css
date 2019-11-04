@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:#DDD;
+}
+.cover{
+	height:644px;
+	background:grey url("media/city.jpg") no-repeat;
+	background-size:cover;
+}
+h1{
+	position:absolute;
+	top:280px;
+	transform:translateY(-50%);
+	margin-left:80px;
+	padding:0;
+	text-align:center;
+	font-family: 'PT Serif', serif;
+	font-size:90px;
+	color:#FFF;
+	text-transform:uppercase;
+	text-shadow:0 5px 10px rgba(0,0,0,1);
+	mix-blend-mode:overlay;
+	box-shadow:0 5px 10px rgba(0,0,0,2);
+	background:rgba(0,0,0,.2);
+}
+.vote{
+	margin-top:490px;
+	margin-left:480px;
+	font-family: 'Playfair Display', serif;
+	text-align:center;
+	font-size:22px;
+	font-weight:bold;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: #3A27E6;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #8C8EFF;
+	width:25%;
+	height:10%;
+ }
+
+.vote:hover {background-color: #232440}
+
+.vote:active {
+  background-color: #232440;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.content-section{
+	padding:16px;
+	line-height:30px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	border-radius:10px;
+	box-shadow: 0px 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+	width:60%;
+	height:auto;
+	margin-left: 100px;
+	margin-top:20px;
+	font-size: 28px;
+	background-color: #DDD;
+}
+input[type=text], input[type=password] {
+	width:50%;
+	padding:15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border:none;
+	background:#f1f1f1;
+	text-align:center;
+	font-family: 'Noto Serif', serif;
+	font-size: 18px;
+}
+input[type=text]:focus, input[type=password]:focus{
+	background-color:bisque;
+	outline:none;
+}
+.button{
+	background-color:#A10BBF;
+	color:white;
+	padding:16px 20px;
+	margin:8px 0;
+	border:none;
+	cursor:pointer;
+	width:75%;
+	opacity:.5;
+	border-radius:15px;
+	font-weight:bold;
+	font-family: 'Lora', serif;
+	font-size:22px;
+	text-align: center;
+
+}
+.button:hover{
+	opacity:1;
+}
+.container{
+	background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+	margin-top: 50px;
+  margin-bottom: 20px;
+	text-align: center;
+	width:40%;
+}
+.title{
+	height:40px;
+	width:100%;
+}

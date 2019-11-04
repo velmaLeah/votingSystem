@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		
+		<title>SU-Voting System</title>
+			<meta charset = "utf - 8" />
+
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link href="https://fonts.googleapis.com/css?family=Lato:400i|Merriweather:400i|PT+Serif&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" type="text/css" href="{% static 'votingSystem/style.css' %}">
+    </head>
+	
+	<body>
+		<div class="cover">
+			
+			<h1>STRATHMORE 11TH STUDENT COUNCIL VOTING</h1>
+			<a href="{% url 'login' %}"><button class="vote">VOTE!</button></a>
+		</div>
+</body>
+
+</html>

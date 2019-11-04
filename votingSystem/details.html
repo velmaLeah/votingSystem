@@ -1,0 +1,27 @@
+{% extends "votingSystem/base.html" %}
+{% block content %}
+   <a href="homepage.html"> <button>Back to Dashboard</button></a>
+        <p>{{ position.position_name }}</p>
+
+    {% if error_message %}
+    <p class="alert alert-danger">
+        <strong>{{ error_message }}</strong>
+    </p>
+    {% endif %}
+
+
+    <form action="{% url 'vote' position.id %}" method="post">
+        {% csrf_token %}
+            {% for choice in position.choice_set.all %}
+                <input
+                        type="radio"
+                        name="choice"
+                        id="choice{{ forloop.counter }}"
+                        value="{{ choice.id }}"
+                />
+                <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label>
+
+            {% endfor %}
+    <input type="submit" value="Vote">
+    </form>
+{% endblock %}
